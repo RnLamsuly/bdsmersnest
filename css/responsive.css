@@ -1,1 +1,8 @@
 /*响应式样式 - 移动端适配和媒体查询*/
+@media (max-width: calc(100vw/3)) /*可能有点问题，不起效果*/
+{
+    .leftSidebar
+    {
+        display: none;
+    }
+}
