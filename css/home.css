@@ -1,1 +1,56 @@
 /*首页专用样式 - 只用于首页的特殊样式*/
+
+/*顶栏*/
+div .header
+{
+    height: 15%;
+    width: 100%;
+    margin: 0px;
+
+}
+
+/*左侧导航栏*/
+.leftSidebar
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    background-color: #C6CCFF;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);/*导航栏伸缩欢动*/
+    overflow: hidden;
+    z-index: 999;
+}
+
+.leftSidebar:hover
+{
+    width: 240px;
+}
+
+.nav-ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.nav-innerbox/*导航栏内部分块*/
+{
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    height: 60px;
+}
+
+.nav-innerbox:hover
+{
+    background-color: #cfd4f7;
+}
+
+.nav-logo/*导航图标属性*/
+{
+    width: 100px;
+    height: 60px;
+}
