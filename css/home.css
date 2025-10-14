@@ -1,4 +1,10 @@
 /*首页专用样式 - 只用于首页的特殊样式*/
+/*通用*/
+.blank
+{
+    background-color: #f3f4d6;
+    border-radius: 3vh;
+}
 
 
 /*主体部分排版*/
@@ -32,6 +38,84 @@
     color: rgba(0, 0, 0, .75);
     background-color: #ffffef;
 }
+
+#body/*用于将body分为左右两块*/
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#left/*body左侧welcome和帖子列表*/
+{
+    flex: 2;
+}
+
+#right/*body右侧公告*/
+{
+    flex: 1;
+    height: 100em;
+}
+
+.container/*竖直方向的弹性盒子*/
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+#welcome
+{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#post-list/*包含了一下所有post相关元素，是post分区的总div*/
+{
+    padding-top: 0;
+    height: 150vh;
+    overflow: auto;
+}
+
+#post-head/*用于显示“近期热门帖子”*/
+{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#post-show/*帖子展览的版块，里面是.post*/
+{
+    height: 50em;
+    overflow: auto;
+}
+
+.post/*内部装有帖子内容*/
+{
+    height: 40vh;
+    flex-shrink: 0;
+}
+
+.notice/*公告栏*/
+{
+    height: 40vh;
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+.notice-head/*用于显示“本站公告” */
+{
+    height: 12vh;
+    margin: 5px;
+    flex-shrink: 0;
+}
+
 /*底栏*/
 .footer
 {
@@ -57,12 +141,13 @@
     background-color: #C6CCFF;
     transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);/*导航栏伸缩欢动*/
     overflow: hidden;
-    z-index: 5;
+    z-index: 1000;
 }
 
 .leftSidebar:hover
 {
     width: 240px;
+    opacity: 0.8;
 }
 
 .nav-ul
