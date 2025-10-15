@@ -10,7 +10,7 @@
     <title>BDSM之家</title>
 </head>
 
-<body>
+<body onload="startTime();timeDescribe()">
 
     <!--主box-->
     <div class="main-container">
@@ -21,7 +21,12 @@
         <div id="body" class="main-body">
             <div id="left" class="container">
                 <div id="welcome" class="blank">
-
+                    <div id="welcome-api"></div>
+                    <div id="show-time">
+                        <p style="font-size: 6vh; text-align: center; color: #cfd4f7;"><span id="timeDescribe"></span>好，<span id="Username">Username</span></p>
+                        <br>
+                        <p style="font-size: 6vh; text-align: center; color: #cfd4f7;">现在是 <span id="showTime"></span></p>
+                    </div>
                 </div>
                 <div id="post-head">
                     <p style="font-size: 7vh; color: #cfd4f7;"><strong>近期热门帖子</strong></p>
@@ -107,5 +112,6 @@
             </li>            
         </ul>
     </nav>
+    <script src="/js/utils.js"></script>
 </body> 
 </html>

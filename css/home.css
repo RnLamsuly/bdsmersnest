@@ -69,10 +69,20 @@
 
 #welcome
 {
-    height: 30vh;
+    height: 50vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 10px;
+}
+
+#show-time /*时间问候语*/
+{
+    flex: 1;
+}
+
+#welcome-api /*调用外部api，如天气*/
+{
+    flex: 1;
 }
 
 #post-list/*包含了一下所有post相关元素，是post分区的总div*/
