@@ -144,7 +144,7 @@
     left: 0;
     top: 0;
     height: 100%;
-    width: var(--sidebar-collapsed-width);
+    width: var(--sidebar-collapsed-width);/* 左侧导航栏可以在其他页面反复使用，宽度的变量见/css/style.css */
     background-color: var(--accent);
     transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 导航栏伸缩动画 */
     overflow: hidden;

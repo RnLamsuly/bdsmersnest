@@ -69,7 +69,9 @@ BDSMersNest/
     └── composer/             # Composer目录 - 依赖包管理文件
 ```
 
-# Copilot 使用指引 — bdsmersnest
+
+
+# 以下是Copilot的一阶段建议
 
 以下说明帮助 AI 编码助手快速在本仓库中变得高效并给出安全、可审查的改动。
 
@@ -123,7 +125,7 @@ php -S localhost:8000
 - `README.md` — 含项目分阶段计划和预期的 PHP 迁移说明。
 - HTML 模板：根目录以及 `login/`, `register/`, `post/`, `user/` 下的 `index.html`/`temp.html`。
 
-## 小结与下一步建议
+## 小结与下一步建议(RnLansuly:已执行)
 - 优先把可复用变量和基础排版抽离到 `style.css` 的 `:root` 与 `body`，把页面专用规则保留在 `home.css`。
 - 我可以基于以上建议帮你做一次小规模、最低风险的重构（例如：抽取 3 个颜色变量、把 `body` 的字体集中、替换 `.main-body` 的 font 声明），你愿意我现在执行并生成 PR 示例吗？
 
