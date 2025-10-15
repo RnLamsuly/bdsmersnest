@@ -1,9 +1,13 @@
-/*首页专用样式 - 只用于首页的特殊样式*/
-/*通用*/
-.blank
-{
-    background-color: #f3f4d6;
-    border-radius: 3vh;
+/* 首页专用样式 - 只用于首页的特殊样式 */
+/*
+    说明：此文件仅放置首页特有的样式（布局/组件），
+    可复用变量和全局排版已移至 `css/style.css` 中的 :root 和 body。
+*/
+
+/* 通用 */
+.blank {
+        background-color: #f3f4d6;
+        border-radius: 3vh;
 }
 
 
@@ -17,26 +21,21 @@
     margin-left: 3.7em;
     z-index: 0;
 }
-/*顶栏*/
-.header
-{
+/* 顶栏 */
+.header {
     display: flex;
     margin: 0px;
     padding: 0;
     height: 4em;
     width: 100%;
-    background-color: #ebecde;
+    background-color: var(--bg-panel);
 }
-/*正文*/
-.main-body
-{
+/* 正文 */
+.main-body {
     display: flex;
     flex: 1;
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", "Noto Sans CJK", "Source Han Sans", "PingFang SC", "Segoe UI", "Microsoft YaHei", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: rgba(0, 0, 0, .75);
-    background-color: #ffffef;
+    /* 继承全局字体和背景（见 css/style.css） */
+    background-color: var(--bg-main);
 }
 
 #body/*用于将body分为左右两块*/
@@ -126,37 +125,34 @@
     flex-shrink: 0;
 }
 
-/*底栏*/
-.footer
-{
+/* 底栏 */
+.footer {
     display: flex;
     bottom: 0;
     margin: 0;
     padding: 0;
     height: 10em;
     width: 100%;
-    background-color: #ebecde;
+    background-color: var(--bg-panel);
 }
 
-/*左侧导航栏*/
-.leftSidebar
-{
+/* 左侧导航栏 */
+.leftSidebar {
     display: flex;
     flex-direction: column;
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
-    width: 60px;
-    background-color: #C6CCFF;
-    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);/*导航栏伸缩欢动*/
+    width: var(--sidebar-collapsed-width);
+    background-color: var(--accent);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* 导航栏伸缩动画 */
     overflow: hidden;
     z-index: 1000;
 }
 
-.leftSidebar:hover
-{
-    width: 240px;
+.leftSidebar:hover {
+    width: var(--sidebar-expanded-width);
     opacity: 0.8;
 }
 
@@ -176,9 +172,8 @@
     height: 60px;
 }
 
-.nav-innerbox:hover
-{
-    background-color: #cfd4f7;
+.nav-innerbox:hover {
+    background-color: var(--accent-hover);
 }
 
 .nav-logo/*导航图标属性*/

@@ -1,1 +1,26 @@
 /*主样式文件 - 全局样式、通用组件样式*/
+:root {
+	/* 颜色变量 */
+	--bg-panel: #ebecde; /* header / footer panels */
+	--bg-main: #ffffef;  /* 页面主背景 */
+	--accent: #C6CCFF;   /* 侧栏主色 */
+	--accent-hover: #cfd4f7;
+	--bg-blank: #f3f4d6;
+
+	/* 布局变量 */
+	--sidebar-collapsed-width: 60px;
+	--sidebar-expanded-width: 240px;
+
+	/* 版面变量 */
+	--page-gap: 1rem;
+}
+
+/* 全局版式与可继承排版样式 */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", "Noto Sans", "Noto Sans CJK SC", "Noto Sans CJK", "Source Han Sans", "PingFang SC", "Segoe UI", "Microsoft YaHei", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: rgba(0, 0, 0, .75);
+	background-color: var(--bg-main);
+}
+
